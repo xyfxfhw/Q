@@ -14,5 +14,5 @@ void WelcomeWin::showCatalogWin()
 {
 	Catalog = new CatalogWin();
 	Catalog->show();
-	this->hide();
+	//this->hide();
 }

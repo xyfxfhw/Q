@@ -13,8 +13,11 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -22,6 +25,10 @@ QT_BEGIN_NAMESPACE
 class Ui_CatalogWin
 {
 public:
+    QVBoxLayout *verticalLayout;
+    QSpacerItem *verticalSpacer;
+    QHBoxLayout *horizontalLayout;
+    QSpacerItem *horizontalSpacer;
     QPushButton *pushButton;
 
     void setupUi(QWidget *CatalogWin)
@@ -29,9 +36,29 @@ public:
         if (CatalogWin->objectName().isEmpty())
             CatalogWin->setObjectName(QStringLiteral("CatalogWin"));
         CatalogWin->resize(1058, 796);
+        verticalLayout = new QVBoxLayout(CatalogWin);
+        verticalLayout->setSpacing(6);
+        verticalLayout->setContentsMargins(11, 11, 11, 11);
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalSpacer = new QSpacerItem(20, 734, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout->addItem(verticalSpacer);
+
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setSpacing(6);
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer);
+
         pushButton = new QPushButton(CatalogWin);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(730, 660, 93, 28));
+
+        horizontalLayout->addWidget(pushButton);
+
+
+        verticalLayout->addLayout(horizontalLayout);
+
 
         retranslateUi(CatalogWin);
         QObject::connect(pushButton, SIGNAL(clicked()), CatalogWin, SLOT(close()));
