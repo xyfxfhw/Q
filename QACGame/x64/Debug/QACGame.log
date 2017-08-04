@@ -1,0 +1,22 @@
+﻿生成启动时间为 2017/8/4 22:02:00。
+     1>项目“C:\Users\雪云飞星\documents\visual studio 2013\Projects\QACGame\QACGame\QACGame.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_CatalogWin.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_CatalogWin.cpp, GeneratedFiles\Release\moc_CatalogWin.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_WelcomeWin.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_WelcomeWin.cpp, GeneratedFiles\Release\moc_WelcomeWin.cpp.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.9.1\5.9.1\msvc2013_64\include /I.\GeneratedFiles\Debug /IC:\Qt\Qt5.9.1\5.9.1\msvc2013_64\include\QtCore /IC:\Qt\Qt5.9.1\5.9.1\msvc2013_64\include\QtGui /IC:\Qt\Qt5.9.1\5.9.1\msvc2013_64\include\QtWidgets /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt CatalogWin.cpp WelcomeWin.cpp
+         CatalogWin.cpp
+         WelcomeWin.cpp
+         正在生成代码...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\雪云飞星\documents\visual studio 2013\Projects\QACGame\x64\Debug\\QACGame.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.9.1\5.9.1\msvc2013_64\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\雪云飞星\documents\visual studio 2013\Projects\QACGame\x64\Debug\QACGame.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\雪云飞星\documents\visual studio 2013\Projects\QACGame\x64\Debug\QACGame.lib" /MACHINE:X64 x64\Debug\CatalogWin.obj
+         x64\Debug\moc_CatalogWin.obj
+         x64\Debug\moc_WelcomeWin.obj
+         x64\Debug\qrc_WelcomeWin.obj
+         x64\Debug\main.obj
+         x64\Debug\WelcomeWin.obj
+         QACGame.vcxproj -> C:\Users\雪云飞星\documents\visual studio 2013\Projects\QACGame\x64\Debug\QACGame.exe
+     1>已完成生成项目“C:\Users\雪云飞星\documents\visual studio 2013\Projects\QACGame\QACGame\QACGame.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.99
